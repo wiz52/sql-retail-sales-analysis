@@ -9,7 +9,6 @@ This project analyzes a small retail dataset using SQL to understand:
 - Customer spending patterns  
 - Monthly revenue trends  
 
-This is a beginner-friendly SQL analytics project suitable for data analyst portfolios.
 
 ---
 
