@@ -1,51 +1,45 @@
-Project Overview
+# Retail Sales Analysis using SQL
 
+## 📌 Project Overview
 This project analyzes a small retail dataset using SQL to understand:
+- Total revenue  
+- Category performance  
+- Top-selling products  
+- City-wise sales  
+- Customer spending patterns  
+- Monthly revenue trends  
 
-Total revenue
+This is a beginner-friendly SQL analytics project suitable for data analyst portfolios.
 
-Category performance
+---
 
-Top-selling products
+## 🛠️ Tools Used
+- **SQLite (SQL engine)**
+- **SQLiteOnline (Browser-based SQL environment)**
+- **SQL (DDL, DML, Aggregations)**
 
-City-wise sales
+---
 
-Customer spending patterns
+## 📂 Dataset Description
 
-Monthly revenue trends
+**Columns included:**
+- `order_id`  
+- `order_date`  
+- `customer_id`  
+- `product`  
+- `category`  
+- `quantity`  
+- `price`  
+- `city`  
 
-Dataset Description
+Dataset size: **10 rows**
 
-Columns included:
+---
 
-order_id
+## 🔍 SQL Queries & Explanations
 
-order_date
-
-customer_id
-
-product
-
-category
-
-quantity
-
-price
-
-city
-
-Dataset size: 10 rows
-
-Tools Used
-
-SQLite (SQL engine)
-
-SQLiteOnline (Browser-based SQL environment)
-
-SQL (DDL, DML, Aggregations)
-
-SQL Queries & Explanations
-1. Total Revenue
+### 1. Total Revenue
+```sql
 SELECT SUM(quantity * price) AS total_revenue
 FROM retail_sales;
 
@@ -82,8 +76,7 @@ GROUP BY customer_id
 ORDER BY total_spent DESC
 LIMIT 1;
 
-
-Insights
+📈 Insights
 
 Electronics generated the highest revenue
 
@@ -93,8 +86,7 @@ Customer C001 is the highest spender
 
 Clothing category shows regular buying patterns
 
-
-Conclusion
+📌 Conclusion
 
 This project demonstrates essential SQL skills:
 
@@ -109,3 +101,4 @@ Aggregation
 Grouping
 
 Trend analysis
+
